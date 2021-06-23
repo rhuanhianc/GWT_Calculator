@@ -1,0 +1,25 @@
+/** Add css rules here for your application. */
+body {
+	text-align: center;
+	font-family: verdana, sans-serif;
+}
+/** Example rules used by the template application (remove for your app) */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #777777;
+  margin: 40px 0px 70px;
+  text-align: center;
+}
+icons-hori{
+	padding: 5px;
+}
+.gwt-Button  { 
+	margin: 4px;
+    padding: 4px 10px !important;
+    font-size: medium;
+    border: 1px solid #bbb;
+    border-bottom: 1px solid #a0a0a0;
+    border-radius: 20px;
+
+}
