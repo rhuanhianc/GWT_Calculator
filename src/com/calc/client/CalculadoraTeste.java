@@ -41,6 +41,7 @@ public class CalculadoraTeste implements EntryPoint {
 	@Override
 	public void onModuleLoad() {
 		// TODO Auto-generated method stub
+	
 		
 		somar.addClickHandler(new ClickHandler() {
 			
@@ -53,7 +54,45 @@ public class CalculadoraTeste implements EntryPoint {
 				lblResultado.setText(Double.toString(Soma));
 			}
 		});
-		//flPanel2.setStyleName("verticaEstilo");
+		
+		subtrair.addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				Double n1 = Double.parseDouble(txtN1.getText());
+				Double n2 = Double.parseDouble(txtN2.getText());
+				Double Sub = n1 - n2;
+				lblResultado.setText(Double.toString(Sub));
+				
+			}
+		});
+		
+		dividir.addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				Double n1 = Double.parseDouble(txtN1.getText());
+				Double n2 = Double.parseDouble(txtN2.getText());
+				Double Sub = n1 / n2;
+				lblResultado.setText(Double.toString(Sub));
+				
+			}
+		});
+		
+		multiplicar.addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				Double n1 = Double.parseDouble(txtN1.getText());
+				Double n2 = Double.parseDouble(txtN2.getText());
+				Double Sub = n1 * n2;
+				lblResultado.setText(Double.toString(Sub));
+				
+			}
+		});
+		
+		
+		flPanel2.setStyleName("icons-hori");
 		//horizonPanel.setSpacing(1);
 		//horizonPanel.setWidth("100%");
 		//horizonPanel.setHeight("100%");
